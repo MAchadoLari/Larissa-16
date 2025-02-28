@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currículo - Seu Nome</title>
+<style>
+body { font-family: Arial, sans-serif; background-color: #4a8857; color: #0a0909; }
+.container { width: 60%; margin: auto; }
+h1, h2 { color: #c2c5f0; }
+button { font-size: 1.2em; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Larissa dos Santos Machado</h1>
+<p>Email: larissa@email.com | Telefone: (41) 99999-9999</p>
+<h2> Meu nome é Larissa, tenho 22 anos e procuro uma oportunidade para trabalhar de forma fixa com a minha formação.</h2>
+<p>Experiência e habilidades: Sou uma pessoa proativa, gosto de ajudar as pessoas e espero conseguir demonstrar isso para os meus colegas de trabalho. Sou ótima com fotos ao ar livre.</p>
+<h2>Formação Acadêmica</h2>
+<p>Fotografia - UFPR - 2030</p>
+<h2>Experiência</h2>
+<p>Fiz muitos estágios durante a faculdade, trabalhando na maioria das vezes em aniversários, casamentos e formaturas, sempre com resultados muito bons.</p>
+<p>Agência de eventos - Fotografia - 3 anos</p>
+<h2>Habilidades</h2>
+<ul>
+<li>Tenho facilidade em trabalhar com crianças, sempre as guiando aos lugares certos em pouco tempo.</li>
+<li>Em meio aos aniversários, também dou alguns conselhos ao aniversariante e convidados.</li>
+</ul>
+<h2>Acessibilidade</h2>
+<button onclick="aumentarFonte()">A+</button>
+<button onclick="diminuirFonte()">A-</button>
+<script>
+function aumentarFonte() {
+    document.body.style.fontSize = 'larger';
+}
+function diminuirFonte() {
+    document.body.style.fontSize = 'smaller';
+}
+</script>
+</div>
+
+<div id="acessibilidade" class="menu-acessibilidade">
+    <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao">Acessibilidade</button>
+    <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+        <button id="aumentar-fonte" onclick="aumentarFonte()" class="btn btn-primary fw-bold">A+</button>
+        <button id="diminuir-fonte" onclick="diminuirFonte()" class="btn btn-primary fw-bold">A-</button>
+        <button id="contraste" class="btn btn-primary fw-bold">Modo Alto Contraste</button>
+    </div>
+</div>
+
+</body>
+</html>
